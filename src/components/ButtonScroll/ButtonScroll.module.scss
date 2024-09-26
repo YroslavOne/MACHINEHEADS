@@ -1,0 +1,38 @@
+@import './../../index.scss';
+.button_scroll {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: $button-slider;
+  }
+}
+.button_scroll_image {
+  display: block;
+	
+}
+@media (max-width: 479px) {
+	.button_scroll{
+		width: 35px;
+		height: 35px;
+	}
+}
+@media (min-width: 480px) {
+	.button_scroll{
+		width: 35px;
+		height: 35px;
+	}
+}
+@media (min-width: 768px) {
+	.button_scroll{
+		width: 45px;
+		height: 45px;
+	}
+}

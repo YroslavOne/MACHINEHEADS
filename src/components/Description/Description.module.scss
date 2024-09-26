@@ -1,0 +1,190 @@
+@import './../../index.scss';
+
+.description {
+  position: absolute;
+  max-width: 340px;
+  max-height: 433px;
+  background-color: $background-color;
+  border-radius: $card-radius;
+  padding: 20px;
+  bottom: 0;
+}
+.description_detailed {
+}
+.description_detailed_h4 {
+  text-align: left;
+  font-family: IBM Plex Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+  color: $text-color;
+  margin-bottom: 12px;
+}
+
+.description_detailed_type {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 12px;
+}
+.description_detailed_type_li {
+  font-family: IBM Plex Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.description_detailed_type_li_img {
+  margin-right: 10px;
+}
+
+.description_prise {
+}
+.description_prise_old {
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  text-decoration: line-through;
+  color: $grey;
+}
+.description_prise_new {
+  font-family: IBM Plex Sans;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 33.8px;
+  text-align: left;
+  color: $text-color;
+}
+.description_buy {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: solid 1px $grey;
+  background: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: IBM Plex Sans;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+    border: solid 1px $grey;
+  }
+  &:hover {
+    border: solid 1px $grey-hover;
+  }
+}
+
+@media (max-width: 479px) {
+  .description {
+    max-width: 280px;
+    max-height: 384px;
+    padding: 10px;
+  }
+  .description_prise_and_cart {
+    margin-top: 21px;
+  }
+  .description_detailed_type {
+    margin-top: 8px;
+  }
+  .description_detailed_h4 {
+    font-size: 14px;
+    line-height: 16.8px;
+    margin-bottom: 8px;
+  }
+  .description_prise_and_cart {
+    margin-top: 21px;
+  }
+  .description_detailed_type_li {
+    margin-bottom: 3px;
+  }
+}
+@media (min-width: 480px) {
+  .description {
+    max-width: 212px;
+    max-height: 405px;
+    padding: 12px 10px;
+  }
+  .description_detailed_h4 {
+    font-size: 14px;
+    line-height: 16.8px;
+    margin-bottom: 8px;
+  }
+  .description_prise_and_cart {
+    margin-top: 21px;
+  }
+  .description_detailed_type {
+    margin-top: 8px;
+  }
+  .description_detailed_type_li {
+    margin-bottom: 3px;
+  }
+}
+@media (min-width: 768px) {
+  .description {
+    max-width: 229px;
+    max-height: 405px;
+  }
+  .description {
+    padding: 12px 10px;
+  }
+  .description_prise_and_cart {
+    margin-top: 21px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .description_detailed_h4 {
+    margin-bottom: 12px;
+  }
+  .description_detailed_type {
+    margin-top: 12px;
+  }
+  .description {
+    max-width: 300px;
+    max-height: 447px;
+  }
+  .description {
+    padding: 20px;
+  }
+  .description_prise_and_cart {
+    margin-top: 14px;
+  }
+  .description_detailed_h4 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .description_detailed_type_li {
+    margin-bottom: 6px;
+  }
+}
+@media (min-width: 1280px) {
+  .description {
+    max-width: 300px;
+    max-height: 451px;
+  }
+  .description_prise_and_cart {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .description {
+    max-width: 340px;
+    max-height: 433px;
+  }
+  .description_detailed_h4 {
+    line-height: 23.4px;
+  }
+}
