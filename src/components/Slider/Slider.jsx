@@ -69,6 +69,7 @@ function Slider() {
         >
           {itemList.map((i, index) => (
             <Item
+            iconList={i.iconList}
               image={i.image}
               rating={i.rating}
               quantity={i.quantity}
